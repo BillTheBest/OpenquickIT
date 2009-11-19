@@ -1,0 +1,12 @@
+OpenquickIT is a extensible IT control panel, for Linux servers.
+
+It can run standalone, or manage multiple remote servers.
+
+It will help you in easy deployment and manteinance of servers, and to
+consolidate your network services, generate reports, alerts, backups, and
+lot of other features that IT people needs.
+
+OpenquickIT management interface, is build over the Catalyst web framework,
+so you can use the Comprehensive Perl Archive Network (CPAN), to extend
+this application to your needs.
+
