@@ -5,6 +5,7 @@ management interface.
 
 	Catalyst::View::JSON
 	Catalyst::View::TT
+	Catalyst::Plugin::Authentication
 	Catalyst::Plugin::Unicode
 
 For devel, the following modules are used.
