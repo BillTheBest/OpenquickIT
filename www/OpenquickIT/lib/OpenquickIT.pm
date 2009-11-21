@@ -17,7 +17,6 @@ use parent qw/Catalyst/;
 use Catalyst qw/-Debug
                 ConfigLoader
                 Static::Simple
-                I18N
                 Unicode/;
 our $VERSION = '0.01';
 
