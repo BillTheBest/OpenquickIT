@@ -40,14 +40,16 @@ __PACKAGE__->config( 'Plugin::Authentication' => {
     default => {
         credential => {
             class          => 'Password',
+            username_field => 'username',
+            username_type  => 'clear',
             password_field => 'password',
             password_type  => 'clear',
         },
         store => {
             class => 'Minimal',
             users => {
-                admin => { password => "admin", },
-                guest => { password => "guest", },
+                admin => { username => "admin", password => "admin", },
+                guest => { username => "guest", password => "guest", },
             }
         }
     }
