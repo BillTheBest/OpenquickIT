@@ -5,7 +5,10 @@ use warnings;
 
 use base 'Catalyst::View::TT';
 
-__PACKAGE__->config(TEMPLATE_EXTENSION => '.tt');
+__PACKAGE__->config(
+    TEMPLATE_EXTENSION => '.tt',
+    INCLUDE_PATH       => [ OpenquickIT->path_to( 'root', ), ],
+);
 
 =head1 NAME
 
