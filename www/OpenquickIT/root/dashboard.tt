@@ -20,7 +20,8 @@
     </p>
    </div>
    <p>
-    <a href="/"><img src="/static/img/logo.png" alt="OpenquickIT"/></a>
+    <a href="/"><img src="/static/img/logo_250.png" alt="OpenquickIT"
+                     height="71" width="250" /></a>
    </p>
   </div>
   <div id="main">

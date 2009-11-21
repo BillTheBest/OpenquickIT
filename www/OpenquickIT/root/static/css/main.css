@@ -116,7 +116,7 @@
 
   div#all
   {
-      border:            1px solid #aaa;
+      border:            1px solid #ddd;
       margin:            10px auto 10px auto;
       padding:           0;
       max-width:         1280px;
@@ -148,7 +148,8 @@
   div#footer
   {
       clear:             all;
-      font-size:         small;
+      color:             #aaa;
+      font-size:         0.9em;
       text-align:        center;
       margin:            0px auto;
       max-width:         1280px;
