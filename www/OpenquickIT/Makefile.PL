@@ -19,6 +19,7 @@ requires 'Config::General';
 # Add here your custom requires
 requires 'Catalyst::View::TT';
 requires 'Catalyst::View::JSON';
+requires 'Catalyst::Plugin::Authentication';
 requires 'Catalyst::Plugin::Unicode';
 
 # End of custom requires

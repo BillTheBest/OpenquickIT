@@ -17,6 +17,7 @@ use parent qw/Catalyst/;
 use Catalyst qw/-Debug
                 ConfigLoader
                 Static::Simple
+                Authentication
                 Unicode/;
 our $VERSION = '0.01';
 
@@ -30,6 +31,24 @@ our $VERSION = '0.01';
 # local deployment.
 
 __PACKAGE__->config( name => 'OpenquickIT' );
+
+# Authentication
+__PACKAGE__->config( 'Plugin::Authentication' => {
+    default => {
+        credential => {
+            class          => 'Password',
+            password_field => 'password',
+            password_type  => 'clear',
+        },
+        store => {
+            class => 'Minimal',
+            users => {
+                admin => { password => "admin", },
+                guest => { password => "guest", },
+            }
+        }
+    }
+});
 
 # Start the application
 __PACKAGE__->setup();
