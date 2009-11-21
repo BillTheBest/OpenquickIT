@@ -130,9 +130,10 @@
    </div><!-- #login_widget -->
    <div id="footer">
     <p>
-     Powered by 
+     Powered by  
      <a href="[% c.config.apphome %]"
-        title="[% c.config.name %]">[% c.config.name %]</a>.
+        target="_blank"
+        title="[% c.config.name %] home.">[% c.config.name %]</a>.
     </p>
    </div><!-- #footer -->
   </div><!-- #all -->

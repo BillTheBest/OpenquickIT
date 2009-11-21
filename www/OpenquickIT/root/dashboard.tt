@@ -29,7 +29,11 @@
   </div>
  </div>
  <div id="footer">
-  <p>(C) 2009 <a href="[% c.config.apphome %]">[% c.config.name %]</a>.</p>
+  <p>
+   (C) 2009 <a href="[% c.config.apphome %]"
+               target="_blank"
+               title="[% c.config.name %] home.">[% c.config.name %]</a>.
+  </p>
  </div>
 </body>
 </html>
