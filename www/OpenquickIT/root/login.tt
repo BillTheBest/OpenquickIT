@@ -74,7 +74,7 @@
        margin: 1em 0;
        padding: 0.3em 1em;
    }
-   #login_body p#message {
+   #form_login p#error_msg {
        color:       #c00;
        font-weight: bold;
        text-align:  center;
