@@ -6,6 +6,9 @@ management interface.
 	Catalyst::View::JSON
 	Catalyst::View::TT
 	Catalyst::Plugin::Authentication
+        Catalyst::Plugin::Session
+        Catalyst::Plugin::Session::State::Cookie
+        Catalyst::Plugin::Session::Store::FastMmap  # temporal glue
 	Catalyst::Plugin::Unicode
 
 For devel, the following modules are used.
