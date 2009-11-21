@@ -11,8 +11,14 @@ requires 'Catalyst::Plugin::ConfigLoader';
 requires 'Catalyst::Plugin::Static::Simple';
 requires 'Catalyst::Action::RenderView';
 requires 'parent';
-requires 'Config::General'; # This should reflect the config file format you've chosen
-                 # See Catalyst::Plugin::ConfigLoader for supported formats
+
+# This should reflect the config file format you've chosen
+# See Catalyst::Plugin::ConfigLoader for supported formats
+requires 'Config::General';
+
+# Add here your custom requires
+
+# End of custom requires
 catalyst;
 
 install_script glob('script/*.pl');
