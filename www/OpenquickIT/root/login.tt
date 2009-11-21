@@ -47,9 +47,10 @@
        -webkit-border-radius: 6px;
        padding:               0.4em 3em 1.4em 3em;
    }
-   #login_body a         {color:#09f; text-decoration:none;}
-   #login_body a:hover   {color:#999;}
-   #login_body a:visited {color:#09f; text-decoration:none;}
+   #login_body a               {color:#09f; text-decoration:none;}
+   #login_body a:hover         {color:#999; text-decoration:underline;}
+   #login_body a:visited       {color:#09f; text-decoration:none;}
+   #login_body a:visited:hover {color:#999; text-decoration:underline;}
    #login_body label {
        text-align:  left;
        line-height: 1.4em;
@@ -94,9 +95,10 @@
        margin: 0.5em;
        text-align:center;
    }
-   #footer a         {color:#09f; text-decoration:none;}
-   #footer a:hover   {color:#666;}
-   #footer a:visited {color:#09f; text-decoration:none;}
+   #footer a               {color:#09f; text-decoration:none;}
+   #footer a:hover         {color:#666; text-decoration:underline;}
+   #footer a:visited       {color:#09f; text-decoration:none;}
+   #footer a:visited:hover {color:#666; text-decoration:underline;}
   </style>
  </head>
  <body onload="document.getElementById('username').focus();">
