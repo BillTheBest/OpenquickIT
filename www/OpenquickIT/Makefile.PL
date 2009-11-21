@@ -17,6 +17,9 @@ requires 'parent';
 requires 'Config::General';
 
 # Add here your custom requires
+requires 'Catalyst::View::TT';
+requires 'Catalyst::View::JSON';
+requires 'Catalyst::Plugin::Unicode';
 
 # End of custom requires
 catalyst;
