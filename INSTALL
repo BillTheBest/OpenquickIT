@@ -3,7 +3,7 @@ management interface.
 
 	Catalyst::View::JSON
 	Catalyst::View::TT
-        Catalyst::Plugin::I18N
+	Catalyst::Plugin::I18N
 	Catalyst::Plugin::Unicode
 
 For devel, the following modules are used.
