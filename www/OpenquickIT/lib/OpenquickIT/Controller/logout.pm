@@ -19,14 +19,19 @@ Catalyst Controller.
 
 =head2 index
 
+Logout logic
+
 =cut
 
 sub index :Path :Args(0) {
-    my ( $self, $c ) = @_;
-
-    $c->response->body('Matched OpenquickIT::Controller::logout in logout.');
+    my ($self, $c) = @_;
+    
+    # Clear the user's state
+    $c->logout;
+    
+    # Send the user to the starting point
+    $c->response->redirect($c->uri_for('/'));
 }
-
 
 =head1 AUTHOR
 
