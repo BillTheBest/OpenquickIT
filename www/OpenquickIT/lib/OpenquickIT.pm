@@ -18,6 +18,9 @@ use Catalyst qw/-Debug
                 ConfigLoader
                 Static::Simple
                 Authentication
+                Session
+                Session::State::Cookie
+                Session::Store::FastMmap
                 Unicode/;
 our $VERSION = '0.01';
 
