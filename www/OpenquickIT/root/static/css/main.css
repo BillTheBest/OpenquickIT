@@ -1,0 +1,178 @@
+
+ /* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+  *                                                                   *
+  *   R E S E T   C S S                                               *
+  *                                                                   *
+  * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+
+  html, body, div, span, applet, object, iframe,
+  h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+  a, abbr, acronym, address, big, cite, code,
+  del, dfn, em, font, img, ins, kbd, q, s, samp,
+  small, strike, strong, sub, sup, tt, var,
+  dl, dt, dd, ol, ul, li,
+  fieldset, form, label, legend,
+  table, caption, tbody, tfoot, thead, tr, th, td {
+      background: transparent ;
+      margin: 0;
+      padding: 0;
+      border: 0;
+      outline: 0;
+      font-weight: inherit;
+      font-style: inherit;
+      font-size: 100.1%;
+      font-family: inherit;
+      vertical-align: baseline;
+  }
+  /* remember to define focus styles! */
+  :focus { outline: 0; }
+  body { line-height: 1; color: black; background: white; }
+  ol, ul { list-style: none; }
+  /* tables still need 'cellspacing="0"' in the markup */
+  table { border-collapse: separate; border-spacing: 0; }
+  caption, th, td { text-align: left; font-weight: normal; }
+  blockquote:before, blockquote:after, q:before, q:after { content: ""; }
+  blockquote, q { quotes: "" ""; }
+
+ /* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+  *                                                                   *
+  *   G L O B A L   T A G S                                           *
+  *                                                                   *
+  * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+
+  body
+  {
+      background:       #fff;
+      color:            #444;
+      font-family:      sans-serif, monospace;
+      font-size:        80%;
+      letter-spacing:   0;
+      line-height:      1.2em;
+      padding:          0;
+      text-align:       justify;
+      text-decoration:  none;
+      word-spacing:     normal;
+  }
+
+  h1,h2,h3,h4,h5,h6
+  {
+      display:      compact;
+      font-weight:  bold;
+      line-height:  1.2em;
+      margin:       1em 0em;
+  }
+
+  h1 { font-size: 2.0em; text-indent: 0.1em; }
+  h2 { font-size: 1.6em; text-indent: 0.5em; }
+  h3 { font-size: 1.5em; text-indent: 1.1em; }
+  h4 { font-size: 1.4em; text-indent: 1.9em; }
+  h5 { font-size: 1.3em; text-indent: 2.9em; }
+  h6 { font-size: 1.2em; text-indent: 4.1em; }
+
+  p
+  {
+      font-size:    1em;
+      font-weight:  normal;
+      margin:       0.8em 0;
+      /*text-align:   justify;*/
+      text-align:   left;
+      text-indent:  2.2em;
+  }
+
+  table { border-collapse: collapse; border-spacing: 0; }
+
+  ul {  }
+
+  li {
+      list-style:  none;
+      margin:      0.8em 0;
+      padding:     0 2em 0 0;
+  }
+
+  strong  { font-weight:  bolder; }
+  cite    { font-style:   italic; }
+  pre     { font-family:  monospace }
+
+  a               { color: #09f; text-decoration: none; }
+  a:hover         { color: #999; text-decoration: underline; }
+  a:visited       { color: #09f; text-decoration: none; }
+  a:visited:hover { color: #999; text-decoration: underline; }
+
+  hr {
+      color:#ccc;
+      background-color:#ccc;
+      height:1px;
+      border:0;
+  }
+
+
+ /* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+  *                                                                   *
+  *   D I V S                                                         *
+  *                                                                   *
+  * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+
+ /* outline wrapper */
+
+  div#all
+  {
+      border:            1px solid #aaa;
+      margin:            10px auto 10px auto;
+      padding:           0;
+      max-width:         1280px;
+      min-width:         640px;
+      width:             90%;
+  }
+
+
+ /* Headers zone */
+
+  div#header     { height: 110px; padding: 5px; }
+  div#header img { display: compact; margin: 5px; }
+  div#header p   { display: compact; padding: 5px; margin: 0; }
+  div#headerLinks     { display: inline; line-height: 12px; float: right; }
+  div#headerLinks p   { text-indent: 0; }
+  div#headerLinks img { margin: 0 5px 0 0; vertical-align: middle; }
+
+ /* Content zone */
+
+  div#main
+  {
+      clear:     both;
+      padding:   5px 15px;
+      overflow:  hidden;
+  }
+
+ /* Footer zone */
+
+  div#footer
+  {
+      clear:             all;
+      font-size:         small;
+      text-align:        center;
+      margin:            0px auto;
+      max-width:         1280px;
+      min-width:         640px;
+      width:             90%;
+  }
+
+  div#footer p { text-align: center;}
+
+ 
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+  *                                                                   *
+  *   G L O B A L   C L A S S E S                                     *
+  *                                                                   *
+  * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+
+  .center     {text-align:center;}
+  .alignLeft  {text-align:left;}
+  .alignRight {text-align:right;}
+  .floatLeft  {float:left;}
+  .floatRight {float:right;}
+  .floatRightCenter {text-align:right;}
+
+  /* Microsoft: You suck, and you know it: */
+  .rounded { -webkit-border-radius: 12px; -moz-border-radius: 12px; }
+
+  /* End of file */
