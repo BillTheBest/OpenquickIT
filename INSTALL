@@ -1,4 +1,6 @@
-Draft, for initial notetaking
+Draft, for initial notetaking, a installation script is planed, to provide 
+a .iso installation media (operative system + application) as well as
+virtual appliances.
 
 You will need the following perl modules installed, to run OpenQuickIT the
 management interface.

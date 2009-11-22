@@ -3,10 +3,18 @@
 #
 
 done Create development environment and github repository.
+
 todo Stage 0 of the documentation of the project.
-         todo Licenses of components.
+         todo document licenses of components.
+                  perl + catalyst + modules
+                  js frameworks and images
+                  all the other
          todo Initial concept and architecture.
-         todo Roadmap
+                  Bootstraping of the application.
+         todo Roadmap and detailed backlog
 todo Installation scripts, for the documented components and defaults.
 todo See tasks for the sprint1 target: print system information.
-
+     done bootstrap basic login, logout, authentication and users.
+     in progress  dashboard web interface.
+     todo logging
+     todo MVC a bit to get some system information in the dashboard.
