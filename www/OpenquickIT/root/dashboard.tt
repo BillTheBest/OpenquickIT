@@ -1,39 +1,96 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-
 <html>
  <head>
-  <title>Login [% c.config.name %]</title>
+  <title>[% c.config.name %]</title>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <link type="text/css" rel="stylesheet"
+        href="/static/js/extjs/resources/css/ext-all.css" />
+  <script type="text/javascript"
+          src="/static/js/extjs/adapter/ext/ext-base.js"></script>
+  <script type="text/javascript"
+          src="/static/js/extjs/ext-all.js"></script>
   <link href="/static/img/favicon.ico" rel="shortcut icon" />
   <link href="/static/img/favicon.ico" rel="icon" type="image/x-icon" />
-  <link type="text/css" rel="stylesheet" href="/static/css/main.css" />
-</head>
-<body>
- <div id="all">
-  <div id="header">
-   <div id="headerLinks">
-    <p>
-     <a href="/user">[% c.user.username %]</a> | 
-     <a href="/help">Help</a> | 
-     <a href="/logout" title="Close the session">Logout</a></p>
-    </p>
-   </div>
-   <p>
-    <a href="/"><img src="/static/img/logo_250.png" alt="OpenquickIT"
-                     height="71" width="250" /></a>
-   </p>
-  </div>
-  <div id="main">
-   <h1>Nothing to see.</h1>
-  </div>
- </div>
- <div id="footer">
-  <p>
-   (C) 2009 <a href="[% c.config.apphome %]"
-               target="_blank"
-               title="[% c.config.name %] home.">[% c.config.name %]</a>.
-  </p>
- </div>
-</body>
+  <script type="text/javascript">
+    Ext.onReady(function(){
+      Ext.state.Manager.setProvider(new Ext.state.CookieProvider());
+      var viewport = new Ext.Viewport({
+        layout:'border',
+        items: [{
+          region:'north',
+          height: 28,
+          maxSize: 28,
+          minSize: 28,
+          collapsible: false,
+          split: false,
+          bodyStyle: 'padding: 0px',
+          margins: '5 5 5 5',
+          items: new Ext.Toolbar({
+            height: 28,
+            items: [{
+              xtype: 'textfield',
+              name: 'field1',
+              emptyText: 'Search...',
+            },'->',{
+              text:'[% c.user.username %]',
+              disabled: true,
+            },{
+              text:'<div id="clock"></div>',
+              disabled: true,
+            },{
+              xtype: 'tbspacer',
+              width: 10,
+            },'-',{
+              text: 'logout',
+              width: 60,
+              handler: function(){ menuClickHandler('/logout'); },
+            }]
+          })
+        },{
+          region:'center',
+          collapsible: false,
+          bodyStyle: 'padding:0px',
+          margins: '0 5 0 5',
+          items: new Ext.TabPanel({
+            activeTab: 0,
+            border: false,
+            anchor:'100% 100%',
+            defaults:{autoScroll: true},
+            items:[{
+              title: 'Dashboard',
+              autoLoad:'/home',
+            },{
+              title: 'Reports',
+              autoLoad:'/reports',
+            }]
+          })
+        },{
+          title: 'Event log',
+          region: 'south',
+          collapsible: true,
+          split: true,
+          floatable : false,
+          bodyStyle: 'padding:15px',
+          height: 120,
+          minSize: 120,
+          maxSize: 300,
+          margins: '0 5 5 5',
+          cmargins: '5 5 5 5',
+        }]
+      });
+      function menuClickHandler(item) { window.location = item };
+      var task = {
+        run: function(){
+          Ext.fly('clock').update(new Date().format('g:i:s A'));
+        },
+        interval: 1000 //1 second
+      }
+      Ext.TaskMgr.start(task);
+    });
+  </script>
+ </head>
+ <body>
+ </body>
 </html>
+
