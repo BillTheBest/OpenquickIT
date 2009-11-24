@@ -6,13 +6,14 @@ You will need the following perl modules installed, to run OpenQuickIT the
 management interface.
 
 	Catalyst::Devel
-	Catalyst::View::JSON
-	Catalyst::View::TT
+        Catalyst::Log::Log4perl 
 	Catalyst::Plugin::Authentication
 	Catalyst::Plugin::Session
 	Catalyst::Plugin::Session::State::Cookie
 	Catalyst::Plugin::Session::Store::FastMmap  # temporal glue
 	Catalyst::Plugin::Unicode
+	Catalyst::View::JSON
+	Catalyst::View::TT
 
 For devel, the following modules are used.
 
