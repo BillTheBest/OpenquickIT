@@ -76,7 +76,9 @@ For furter releases, main targets are:
 
 =item * Configure rsyslogd service in managed servers
 
-=item * Search, reports and ACL
+=item * Diferent log formats of diferent services (apache, iptables, etc)
+
+=item * Search, reports and ACL over events
 
 =back
 
