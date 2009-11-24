@@ -1,0 +1,83 @@
+=pod
+
+=head1 Application components
+
+=head2 Events
+
+OpenquickIT needs to be able to configure, register and report events.
+
+An event is starting, or the result, of any action related to the
+management of IT. Access control is needed over infraestructure events.
+
+Events maybe local or remote.
+
+=head3 Local events
+
+Local events, are those generated, from the management interface.
+
+For example:
+
+=over 4
+
+=item * "Manager14 has granted permission to the user2, in resource34."
+
+=item * "User3 has installed 3 available updates in host6."
+
+=item * "Login failed for user1 from IP address."
+
+=item *  etc...
+
+=back
+
+=head3 Remote events
+
+Remote events, are those that are generated, outside the management interface.
+
+For example:
+
+=over 4
+
+=item * "User3 as started a session, in host1"
+
+=item * "Machine host2 has 3 available updates pending."
+
+=item * "The weekly rotation of apache logs, completed successfully in host3."
+
+=item * etc...
+
+=back
+
+=head3 Event fields
+
+Notetaking:
+
+Acording to old syslog, the following are default fields (and implicit
+FACILITY and PRIORITY for each item):
+
+ DATE | TIME | HOST | USER | MESSAGE
+
+Acording to MS Windows screenshots, these values are registered:
+
+ TYPE | DATE | TIME | SOURCE | CATEGORY | EVENTID | USER | HOST | MESSAGE
+
+Current target for first 0.1 release (standalone version) is:
+
+=over 4
+
+=item * Show some local logs in a data grid
+
+=back
+
+For furter releases, main targets are:
+
+=over 4
+
+=item * Configure log level, rotation and mail alerts (vía rsyslog)
+
+=item * Configure rsyslogd service in managed servers
+
+=item * Search, reports and ACL
+
+=back
+
+=cut
